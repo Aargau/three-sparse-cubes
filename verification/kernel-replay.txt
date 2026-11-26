@@ -1,0 +1,16 @@
+Lean 4.36.0 standalone kernel replay
+Lean default kernel accepts the solution
+
+Nanoda independent replay
+Declaration PEqualNP.Outside.L_gct_234
+Export SHA256 8e73cd3df00998554074974ffa86c8cce9aad11b9da6fcd79a8e9d632a2f1446
+Checker nanoda_bin 0.4.17
+Checker SHA256 a76bed8bc1091842ea7f85996464687ca3945edc6f8194237bf6963503d2d31b
+axiom propext {a b : Prop} : Iff a b → Eq a b
+
+axiom Quot.sound.{u} {α : Sort u} {r : α → α → Prop} {a b : α} : r a b → Eq (Quot.mk r a) (Quot.mk r b)
+
+axiom Classical.choice.{u} {α : Sort u} : Nonempty α → α
+
+Checked 19942 declarations with no errors
+Replay seconds 354.92
